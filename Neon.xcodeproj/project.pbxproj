@@ -15,6 +15,8 @@
 		7BB369B722AC55B7008C5C38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB369B522AC55B7008C5C38 /* LaunchScreen.storyboard */; };
 		7BB369C222AC55B7008C5C38 /* NeonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB369C122AC55B7008C5C38 /* NeonTests.swift */; };
 		7BB369CD22AC55B7008C5C38 /* NeonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB369CC22AC55B7008C5C38 /* NeonUITests.swift */; };
+		7BDAD20F22AC8266000B2592 /* ParsedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDAD20E22AC8266000B2592 /* ParsedText.swift */; };
+		7BDAD21122ACBF8E000B2592 /* ParsedTextTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDAD21022ACBF8E000B2592 /* ParsedTextTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7BB369C822AC55B7008C5C38 /* NeonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BB369CC22AC55B7008C5C38 /* NeonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonUITests.swift; sourceTree = "<group>"; };
 		7BB369CE22AC55B7008C5C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BDAD20E22AC8266000B2592 /* ParsedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedText.swift; sourceTree = "<group>"; };
+		7BDAD21022ACBF8E000B2592 /* ParsedTextTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedTextTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				7BB369B522AC55B7008C5C38 /* LaunchScreen.storyboard */,
 				7BB369B822AC55B7008C5C38 /* Info.plist */,
 				7BB369B222AC55B7008C5C38 /* Preview Content */,
+				7BDAD20E22AC8266000B2592 /* ParsedText.swift */,
 			);
 			path = Neon;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			children = (
 				7BB369C122AC55B7008C5C38 /* NeonTests.swift */,
 				7BB369C322AC55B7008C5C38 /* Info.plist */,
+				7BDAD21022ACBF8E000B2592 /* ParsedTextTest.swift */,
 			);
 			path = NeonTests;
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 				7BB369AB22AC55B5008C5C38 /* AppDelegate.swift in Sources */,
 				7BB369AD22AC55B5008C5C38 /* SceneDelegate.swift in Sources */,
 				7BB369AF22AC55B5008C5C38 /* ContentView.swift in Sources */,
+				7BDAD20F22AC8266000B2592 /* ParsedText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BB369C222AC55B7008C5C38 /* NeonTests.swift in Sources */,
+				7BDAD21122ACBF8E000B2592 /* ParsedTextTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

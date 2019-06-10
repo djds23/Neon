@@ -9,6 +9,12 @@
 import UIKit
 import SwiftUI
 
+let testFixture = """
+NYT Cooking: Gochujang Barbecue Ribs With Peanuts and Scallions
+
+https://cooking.nytimes.com/recipes/1018796-gochujang-barbecue-ribs-with-peanuts-and-scallions?utm_source=sharetools&utm_medium=email&utm_campaign=website
+"""
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   var window: UIWindow?
@@ -21,7 +27,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     // Use a UIHostingController as window root view controller
     let window = UIWindow(frame: UIScreen.main.bounds)
-    window.rootViewController = UIHostingController(rootView: ContentView())
+    window.rootViewController = UIHostingController(rootView:
+        ContentView()
+            .environmentObject(ParsedText(text: testFixture))
+    )
     self.window = window
     window.makeKeyAndVisible()
   }

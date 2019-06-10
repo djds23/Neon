@@ -9,15 +9,26 @@
 import SwiftUI
 
 struct ContentView : View {
+    @EnvironmentObject var parsedText: ParsedText
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            VStack {
+                List {
+                    ForEach(parsedText.sections) { section in
+                        Section(header: Text(section.label).bold()) {
+                            ForEach(section.texts) { text in
+                                Text(text.value)
+                            }
+                        }
+                    }
+                }
+                Text(parsedText.originalText)
+                    .padding()
+                    .lineLimit(nil)
+                    .multilineTextAlignment(.center)
+                Spacer()
+                
+            }.navigationBarTitle(Text("Classified Text"))
+        }
     }
 }
-
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
-#endif
